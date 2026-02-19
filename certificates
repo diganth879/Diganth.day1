@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSL Certificate Types</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: 250px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>SSL / TLS Certificate Types</h1>
+
+<div class="card">
+    <h3>DV Certificate</h3>
+    <p>Basic security</p>
+    <p>Domain verified only</p>
+</div>
+
+<div class="card">
+    <h3>OV Certificate</h3>
+    <p>Business verified</p>
+    <p>Medium trust</p>
+</div>
+
+<div class="card">
+    <h3>EV Certificate</h3>
+    <p>Highest trust</p>
+    <p>Legal company check</p>
+</div>
+
+<div class="card">
+    <h3>Wildcard</h3>
+    <p>Secures subdomains</p>
+</div>
+
+<div class="card">
+    <h3>Multi-Domain</h3>
+    <p>Multiple websites</p>
+</div>
+
+</body>
+</html>
