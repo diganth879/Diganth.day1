@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatGPT Connection Simulation</title>
+</head>
+<body>
+
+<h2>Open console to see workflow</h2>
+<button onclick="connect()">Enter chatgpt.com</button>
+
+<script>
+function connect() {
+    console.log("User entered: www.chatgpt.com");
+
+    setTimeout(() => {
+        console.log("Step 1: DNS lookup started...");
+    }, 500);
+
+    setTimeout(() => {
+        console.log("Step 2: IP address found");
+    }, 1000);
+
+    setTimeout(() => {
+        console.log("Step 3: TCP connection established");
+    }, 1500);
+
+    setTimeout(() => {
+        console.log("Step 4: HTTPS secure connection created");
+    }, 2000);
+
+    setTimeout(() => {
+        console.log("Step 5: Web application loaded");
+    }, 2500);
+
+    setTimeout(() => {
+        console.log("Step 6: User sends prompt to AI");
+    }, 3000);
+
+    setTimeout(() => {
+        console.log("Step 7: AI generates response");
+    }, 3500);
+
+    setTimeout(() => {
+        console.log("Step 8: Response displayed to user");
+    }, 4000);
+}
+</script>
+
+</body>
+</html>
