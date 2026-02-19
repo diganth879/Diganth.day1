@@ -1,0 +1,15 @@
+You type youtube.com
+        ↓
+DNS finds IP address
+        ↓
+TCP connection established
+        ↓
+Secure HTTPS encryption
+        ↓
+Browser sends request
+        ↓
+Google servers process
+        ↓
+Data packets sent back
+        ↓
+Browser renders webpage
