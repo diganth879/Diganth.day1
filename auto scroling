@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Scaling Simulation</title>
+</head>
+<body>
+
+<h2>Auto Scaling System</h2>
+
+<label>Current Users:</label>
+<input type="number" id="users" value="50">
+<button onclick="scale()">Check Scaling</button>
+
+<p id="result"></p>
+
+<script>
+let servers = 2;
+
+function scale() {
+    let users = document.getElementById("users").value;
+
+    // rule: 1 server can handle 50 users
+    let requiredServers = Math.ceil(users / 50);
+
+    if (requiredServers > servers) {
+        document.getElementById("result").innerHTML =
+            "Traffic increased → Scaling UP to " + requiredServers + " servers";
+    }
+    else if (requiredServers < servers) {
+        document.getElementById("result").innerHTML =
+            "Traffic decreased → Scaling DOWN to " + requiredServers + " servers";
+    }
+    else {
+        document.getElementById("result").innerHTML =
+            "No scaling needed → " + servers + " servers running";
+    }
+
+    servers = requiredServers;
+}
+</script>
+
+</body>
+</html>
