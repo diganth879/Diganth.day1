@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Demo</title>
+</head>
+<body>
+
+<h2>User Data from API</h2>
+<button onclick="getUser()">Get User</button>
+<p id="result"></p>
+
+<script>
+function getUser() {
+    fetch("http://localhost:3000/api/user")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("result").innerHTML =
+            "Name: " + data.name + "<br>" +
+            "Age: " + data.age + "<br>" +
+            "Country: " + data.country;
+    });
+}
+</script>
+
+</body>
+</html>
