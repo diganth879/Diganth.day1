@@ -1,0 +1,14 @@
+const express = require("express");
+const app = express();
+
+app.get("/api/user", (req, res) => {
+    res.json({
+        name: "Diganth",
+        age: 20,
+        country: "India"
+    });
+});
+
+app.listen(3000, () => {
+    console.log("API running on http://localhost:3000");
+});
